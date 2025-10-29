@@ -12,13 +12,14 @@ import ClienteImg1 from "../assets/clients/imagem1.png";
 import ClienteImg2 from "../assets/clients/imagem2.png";
 import ClienteImg3 from "../assets/clients/imagem3.png";
 import ImageForms from "../assets/arts/art3-1.png";
-import ContactForm from "../components/contactForm/ContactForm.jsx"; // sem chaves
+import ContactForm from "../components/contactForm/ContactForm.jsx";
 import ContactButton from "../components/contactButton/contactButton.jsx";
 import "../components/contactButton/contactButton.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Footer from "../components/footer/footer.jsx";
 import WhatsAppButton from "../components/whatsappButton/whatsappButton.jsx";
+import ImageTecnologias from "../assets/arts/artes2.png";
 
 const App = () => {
   useEffect(() => {
@@ -70,7 +71,9 @@ const App = () => {
         </div>
         <div className="infos" data-aos="fade-left">
           <TagPage Text="Serviços" customStyle={{ paddingLeft: "25px" }} />
-          <h1>Soluções que Elevam Seu Negócio</h1>
+          <h1>
+            Soluções que elevam<br></br>seu negócio
+          </h1>
           <p>
             <span>Desenvolvimento Mobile:</span> Aplicativos modernos e
             intuitivos para iOS e Android, garantindo performance e usabilidade.
@@ -87,7 +90,7 @@ const App = () => {
       </section>
 
       <section className="Technologies" id="tecnologias">
-        <div className="infos">
+        <div className="infos" data-aos="fade-up">
           <TagPage Text="Tecnologias" customStyle={{ paddingLeft: "10px" }} />
           <h1>
             Do back-end<br></br>ao front-end
@@ -98,56 +101,59 @@ const App = () => {
             que encanta. Trabalho com foco em performance, responsividade e
             código limpo para garantir qualidade em cada linha.
           </p>
+
           <ContactButton Text="Saiba mais" />
         </div>
+
+        <img src={ImageTecnologias} alt="" data-aos="fade-down" />
       </section>
 
       <section className="Projects" id="projetos">
-        <div className="titleSection">
+        <div className="titleSection" data-aos="fade-left">
           <TagPage Text="Portfólio" customStyle={{ paddingLeft: "25px" }} />
           <h1>Projetos</h1>
           <h3>Clique no projeto para ver mais!</h3>
         </div>
         <div className="coluna1-horizontal">
           <a href="https://www.instagram.com/" target="_blank">
-            <button className="img1"></button>
+            <button className="img1" data-aos="fade-left"></button>
           </a>
 
           <a href="https://www.instagram.com/" target="_blank">
-            <button className="img2"></button>
+            <button className="img2" data-aos="fade-up"></button>
           </a>
 
           <a href="https://www.instagram.com/" target="_blank">
-            <button className="img3"></button>
+            <button className="img3" data-aos="fade-right"></button>
           </a>
         </div>
 
-        <div className="imageCentro"></div>
+        <div className="imageCentro" data-aos="fade-up"></div>
 
         <div className="coluna2-horizontal">
           <a href="https://www.instagram.com/" target="_blank">
-            <button className="img1"></button>
+            <button className="img1" data-aos="fade-left"></button>
           </a>
 
           <a href="https://www.instagram.com/" target="_blank">
-            <button className="img2"></button>
+            <button className="img2" data-aos="fade-up"></button>
           </a>
 
           <a href="https://www.instagram.com/" target="_blank">
-            <button className="img3"></button>
+            <button className="img3" data-aos="fade-right"></button>
           </a>
         </div>
       </section>
 
       <section className="Feedbacks" id="feedbacks">
-        <div className="clienteTitulo">
+        <div className="clienteTitulo" data-aos="fade-up">
           <TagPage Text="Feedbacks" customStyle={{ paddingLeft: "17px" }} />
           <h1>O que meus clientes dizem</h1>
           <p>Confiança e resultados comprovados</p>
         </div>
 
         <div className="divQuadrados">
-          <div className="quadrado">
+          <div className="quadrado" data-aos="fade-left">
             <div className="fotoCliente">
               <img src={ClienteImg1} alt="imagem cliente" />
             </div>

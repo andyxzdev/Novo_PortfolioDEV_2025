@@ -50,7 +50,6 @@ function ContactForm() {
       <div className="formulario">
         <div className="tituloForms">
           <h1>Vamos tirar sua ideia do papel?</h1>
-          <h3>Fale comigo agora!</h3>
           <p>
             Preencha o formulário abaixo com seus dados e me conte sobre seu
             projeto. Seja um site, aplicativo ou identidade visual, estou pronto

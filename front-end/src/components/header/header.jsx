@@ -1,35 +1,64 @@
-import React from "react";
+import React, { useState } from "react";
 import "./header.css";
 import logo from "../../assets/logo/logodevbranc.png";
 
 const Header = ({ customStyle }) => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen((prev) => !prev);
+  };
+
   return (
     <header className="header" style={customStyle}>
       <div className="LogoDiv">
         <img src={logo} alt="logo" />
       </div>
-      <nav>
+
+      <button className="menu-toggle" onClick={toggleMenu}>
+        ☰
+      </button>
+
+      <nav className={`nav ${menuOpen ? "open" : ""}`}>
         <ul>
           <li>
-            <a href="#home">inicio</a>
+            <a href="#home" onClick={toggleMenu}>
+              inicio
+            </a>
           </li>
           <li>
-            <a href="#sobre">Sobre</a>
+            <a href="#sobre" onClick={toggleMenu}>
+              Sobre
+            </a>
           </li>
           <li>
-            <a href="#tecnologias">Tecnologias</a>
+            <a href="#tecnologias" onClick={toggleMenu}>
+              Tecnologias
+            </a>
           </li>
           <li>
-            <a href="#projetos">Projetos</a>
+            <a href="#projetos" onClick={toggleMenu}>
+              Projetos
+            </a>
           </li>
           <li>
-            <a href="#feedbacks">Feedbacks</a>
+            <a href="#feedbacks" onClick={toggleMenu}>
+              Feedbacks
+            </a>
           </li>
           <li>
-            <a href="#formulario">Fazer orçamento</a>
+            <a href="#formulario" onClick={toggleMenu}>
+              Fazer orçamento
+            </a>
           </li>
         </ul>
-        <button className="ButtHeader">Entre em contato</button>
+
+        <button
+          className="ButtHeader"
+          onClick={() => window.open("https://wa.me/5524993215864", "_blank")}
+        >
+          Entre em contato
+        </button>
       </nav>
     </header>
   );
