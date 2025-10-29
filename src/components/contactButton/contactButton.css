@@ -1,0 +1,83 @@
+#btn-contato,
+#btn-contato *,
+#btn-contato :after,
+#btn-contato :before,
+#btn-contato:after,
+#btn-contato:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+#btn-contato {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #ffffff;
+  background-image: none;
+  color: #000000;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#ffffff, #000000);
+  padding: 0;
+  text-transform: uppercase;
+  width: 400px;
+}
+#btn-contato:disabled {
+  cursor: default;
+}
+#btn-contato:-moz-focusring {
+  outline: auto;
+}
+#btn-contato svg {
+  display: block;
+  vertical-align: middle;
+}
+#btn-contato [hidden] {
+  display: none;
+}
+#btn-contato {
+  border-radius: 99rem;
+  border-width: 2px;
+  overflow: hidden;
+  padding: 0.8rem 3rem;
+  position: relative;
+  z-index: 0;
+}
+#btn-contato a {
+  mix-blend-mode: difference;
+}
+#btn-contato:after,
+#btn-contato:before {
+  --skew: 0.2;
+  background: #000000;
+  content: "";
+  display: block;
+  height: 102%;
+  left: calc(-50% - 50% * var(--skew));
+  pointer-events: none;
+  position: absolute;
+  top: -104%;
+  transform: skew(calc(150deg * var(--skew))) translateY(var(--progress, 0));
+  transition: transform 0.2s ease;
+  width: 140%;
+}
+#btn-contato:after {
+  --progress: 0%;
+  left: calc(50% + 50% * var(--skew));
+  top: 102%;
+  z-index: -1;
+}
+#btn-contato:hover:before {
+  --progress: 100%;
+}
+#btn-contato:hover:after {
+  --progress: -102%;
+}
+
+a:hover {
+  color: #ffffff;
+}

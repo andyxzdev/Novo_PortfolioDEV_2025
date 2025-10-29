@@ -1,0 +1,9 @@
+.tagPage {
+  background-color: #292929;
+  border: none;
+  border-radius: 40px;
+  width: 120px;
+  height: 30px;
+  padding: 3px 18px;
+  font-weight: bold;
+}
