@@ -77,3 +77,15 @@ a:hover {
   height: auto;
   margin-top: 15px;
 }
+
+@media (max-width: 1367px) {
+  li a {
+    font-size: 15px;
+  }
+
+  .header button {
+    width: 140px;
+    height: 40px;
+    font-size: 12px;
+  }
+}

@@ -23,7 +23,7 @@
   }
 
   & .formulario {
-    width: 70%;
+    width: 45em;
     height: auto;
     display: flex;
     align-items: center;
@@ -33,6 +33,7 @@
     padding: 40px;
     border-radius: 50px;
     color: #000000;
+    margin-bottom: 130px;
 
     & form {
       width: 100%;
@@ -80,6 +81,8 @@
 
       & button {
         margin-top: 40px;
+        height: 50px;
+        font-weight: bold;
         background-color: #000000;
         color: #fff;
         border-radius: 40px;
@@ -95,6 +98,23 @@
         border: 5px solid #ffffff;
         transform: scale(1.05);
         transition: all 0.3s ease-in-out;
+      }
+    }
+  }
+}
+
+@media (max-width: 1367px) {
+  .FormsSection {
+    & .formulario {
+      width: 40rem;
+      height: 50rem;
+
+      & .tituloForms & h1 {
+        font-size: 40px;
+      }
+
+      & p {
+        margin-bottom: -20px;
       }
     }
   }

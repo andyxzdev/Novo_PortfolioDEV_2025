@@ -7,11 +7,9 @@ import TagPage from "../components/tagsPage/tagPage.jsx";
 import "../components/tagsPage/tagPage.css";
 import ImagemApresentacao from "../assets/arts/foto2.png";
 import ImagemSoluctions from "../assets/arts/artes22-1080.png";
-import Icon1Stats from "../assets/icons/iconteste 1.png";
 import ClienteImg1 from "../assets/clients/imagem1.png";
 import ClienteImg2 from "../assets/clients/imagem2.png";
 import ClienteImg3 from "../assets/clients/imagem3.png";
-import ImageForms from "../assets/arts/art3-1.png";
 import ContactForm from "../components/contactForm/ContactForm.jsx";
 import ContactButton from "../components/contactButton/contactButton.jsx";
 import "../components/contactButton/contactButton.css";
@@ -20,6 +18,8 @@ import "aos/dist/aos.css";
 import Footer from "../components/footer/footer.jsx";
 import WhatsAppButton from "../components/whatsappButton/whatsappButton.jsx";
 import ImageTecnologias from "../assets/arts/artes2.png";
+import VideoHomeTopo from "../assets/videoTopo/1029(1).mp4";
+import { TypeAnimation } from "react-type-animation";
 
 const App = () => {
   useEffect(() => {
@@ -32,7 +32,33 @@ const App = () => {
   return (
     <>
       <Header />
-      <section className="Home" id="home"></section>
+      <section className="Home">
+        <video className="videoHome" autoPlay loop muted>
+          <source src={VideoHomeTopo} type="video/mp4" />
+        </video>
+
+        <div className="TextHome">
+          <TypeAnimation
+            sequence={["Bem-vindo(a)", 2000, "ao meu portfólio", 2000]}
+            speed={50}
+            repeat={Infinity}
+          />
+
+          <div className="icones">
+            <a href="https://www.instagram.com/" target="_blank">
+              <i class="bi bi-instagram"></i>
+            </a>
+
+            <a href="https://www.instagram.com/" target="_blank">
+              <i class="bi bi-linkedin"></i>
+            </a>
+
+            <a href="https://www.instagram.com/" target="_blank">
+              <i class="bi bi-github"></i>
+            </a>
+          </div>
+        </div>
+      </section>
 
       <section className="Apresentation" id="sobre">
         <div className="infos" data-aos="fade-left">
@@ -57,6 +83,7 @@ const App = () => {
             src={ImagemApresentacao}
             alt="imagem apresentação"
             style={{ width: "40em", height: "auto" }}
+            id="imagemEu"
           />
         </div>
       </section>
@@ -178,8 +205,18 @@ const App = () => {
           </div>
         </div>
       </section>
+      <section className="FormsSection">
+        <img
+          src={ImagemApresentacao}
+          alt="imagem apresentação"
+          style={{ width: "40em", height: "auto" }}
+          data-aos="fade-right"
+        />
+        <div data-aos="fade-left">
+          <ContactForm />
+        </div>
+      </section>
 
-      <ContactForm />
       <Footer></Footer>
       <WhatsAppButton />
     </>

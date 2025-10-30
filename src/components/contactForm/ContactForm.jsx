@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios"; // axios é usado para fazer requisições HTTP, que nesse caso é pro envio do formulario
 import "./ContactForm.css";
-import imgForm from "../../assets/arts/art3-1.png";
 
 function ContactForm() {
   const [formData, setFormData] = useState({
@@ -49,7 +48,9 @@ function ContactForm() {
     <section className="FormsSection" id="formulario">
       <div className="formulario">
         <div className="tituloForms">
-          <h1>Vamos tirar sua ideia do papel?</h1>
+          <h1>
+            Vamos tirar sua ideia<br></br>do papel?
+          </h1>
           <p>
             Preencha o formulário abaixo com seus dados e me conte sobre seu
             projeto. Seja um site, aplicativo ou identidade visual, estou pronto
