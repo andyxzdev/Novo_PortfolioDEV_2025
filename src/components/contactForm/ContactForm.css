@@ -119,3 +119,46 @@
     }
   }
 }
+
+@media (max-width: 820px) {
+  .FormsSection {
+    flex-direction: column;
+    padding: 0 10px;
+
+    & img {
+      width: 90vw !important;
+      max-width: 100%;
+      margin-bottom: 20px;
+      height: auto !important;
+    }
+
+    & .formulario {
+      width: 95vw;
+      max-width: 100%;
+      height: auto;
+      padding: 20px 10px;
+      box-sizing: border-box;
+
+      & .tituloForms h1 {
+        font-size: 24px;
+        text-align: center;
+      }
+
+      & p {
+        font-size: 14px;
+        text-align: center;
+      }
+
+      & input,
+      & textarea {
+        font-size: 16px;
+        padding: 10px 15px;
+      }
+
+      & button {
+        height: 40px;
+        font-size: 16px;
+      }
+    }
+  }
+}

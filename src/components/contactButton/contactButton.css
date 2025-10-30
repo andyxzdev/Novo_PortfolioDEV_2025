@@ -81,3 +81,11 @@
 a:hover {
   color: #ffffff;
 }
+
+@media (max-width: 480px) {
+  #btn-contato {
+    width: 100%;
+    padding: 0.8rem 1.6rem;
+    font-size: 90%;
+  }
+}

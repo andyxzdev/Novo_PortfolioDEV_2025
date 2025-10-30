@@ -7,3 +7,12 @@
   padding: 3px 18px;
   font-weight: bold;
 }
+
+@media (max-width: 480px) {
+  .tagPage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+}

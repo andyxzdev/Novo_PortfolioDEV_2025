@@ -15,7 +15,6 @@ import ContactButton from "../components/contactButton/contactButton.jsx";
 import "../components/contactButton/contactButton.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Footer from "../components/footer/footer.jsx";
 import WhatsAppButton from "../components/whatsappButton/whatsappButton.jsx";
 import ImageTecnologias from "../assets/arts/artes2.png";
 import VideoHomeTopo from "../assets/videoTopo/1029(1).mp4";
@@ -217,7 +216,9 @@ const App = () => {
         </div>
       </section>
 
-      <Footer></Footer>
+      <footer>
+        <h1>2025 - Todos os direitos reservados</h1>
+      </footer>
       <WhatsAppButton />
     </>
   );

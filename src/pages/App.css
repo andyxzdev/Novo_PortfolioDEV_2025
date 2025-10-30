@@ -190,7 +190,7 @@
 
     & .img1 {
       width: 395px;
-      height: 564px;
+      height: 640px;
       background-image: url("../assets/arts/projetoCogu.png");
       background-position: center;
       background-size: cover;
@@ -201,7 +201,7 @@
 
     & .img2 {
       width: 395px;
-      height: 564px;
+      height: 640px;
       background-image: url("../assets/arts/projetoCogu2.png");
       background-position: center;
       background-size: cover;
@@ -212,7 +212,7 @@
 
     & .img3 {
       width: 395px;
-      height: 564px;
+      height: 640px;
       background-image: url("../assets/arts/projetoAMA.png");
       background-position: center;
       background-size: cover;
@@ -246,7 +246,7 @@
 
     & .img1 {
       width: 395px;
-      height: 564px;
+      height: 640px;
       background-image: url("../assets/arts/projetoComais.png");
       background-position: center;
       background-size: cover;
@@ -256,7 +256,7 @@
     }
     & .img2 {
       width: 395px;
-      height: 564px;
+      height: 640px;
       background-image: url("../assets/arts/projetoZaghi.png");
       background-position: center;
       background-size: cover;
@@ -266,7 +266,7 @@
     }
     & .img3 {
       width: 395px;
-      height: 564px;
+      height: 640px;
       background-image: url("../assets/arts/projetoUnity.png");
       background-position: center;
       background-size: cover;
@@ -324,7 +324,7 @@
 
     & .quadrado {
       width: 300px;
-      height: 320px;
+      height: 380px;
       background-color: #000000;
       box-shadow: 0px 0px 20px #ffffff4b;
       border-radius: 40px;
@@ -355,6 +355,18 @@
     }
   }
 }
+
+footer {
+  height: 12vh;
+  background-color: #111111;
+
+  & h1 {
+    font-size: 20px;
+    text-align: center;
+    padding-top: 40px;
+  }
+}
+
 @media (min-width: 1729px) {
   .Home {
     width: 1366px;
@@ -399,7 +411,7 @@
     }
 
     & .imageSoluctions {
-      width: 50rem;
+      width: 42rem;
       margin-left: -120px;
     }
   }
@@ -431,7 +443,7 @@
       .img2,
       .img3 {
         width: 350px;
-        height: 500px;
+        height: 560px;
       }
     }
 
@@ -442,7 +454,7 @@
       .img2,
       .img3 {
         width: 350px;
-        height: 500px;
+        height: 560px;
       }
     }
 
@@ -496,7 +508,7 @@
     }
 
     & .imageSoluctions {
-      width: 50rem;
+      width: 42rem;
       margin-left: -120px;
     }
   }
@@ -546,6 +558,408 @@
     & .imageCentro {
       width: 90%;
       height: 414px;
+    }
+  }
+}
+
+@media (max-width: 1033px) {
+  .Home {
+    height: 600px;
+    & .TextHome {
+      font-size: 2rem;
+      margin-top: 50vh;
+      & .icones {
+        padding: 0 12vw;
+        & i {
+          font-size: 25px;
+        }
+      }
+    }
+  }
+
+  .Apresentation,
+  .Services,
+  .Technologies,
+  .Projects {
+    flex-direction: column;
+    gap: 50px;
+    padding: 0 15px;
+  }
+  .Projects .coluna1-horizontal,
+  .Projects .coluna2-horizontal {
+    flex-direction: column;
+    gap: 20px;
+    padding: 0;
+  }
+  .Projects .imageCentro {
+    width: 100%;
+    height: 300px;
+  }
+  .Feedbacks .divQuadrados {
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 820px) {
+  .Home {
+    height: 350px;
+    & .TextHome {
+      font-size: 1rem;
+    }
+  }
+
+  .Apresentation {
+    text-align: center;
+    justify-content: center;
+    padding: 0 50px;
+    margin-left: -20px;
+
+    & .infos {
+      & h1 {
+        font-size: 50px;
+      }
+    }
+  }
+
+  .Services {
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+    margin-left: -20px;
+
+    & .infos {
+      width: 80%;
+      margin-top: -120px;
+      & h1 {
+        font-size: 40px;
+      }
+    }
+
+    & .imageSoluctions {
+      width: 34rem;
+      margin-left: 80px;
+    }
+  }
+
+  & .Technologies {
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0 120px;
+    margin-left: -20px;
+    margin-top: 20vh;
+
+    & .infos {
+      & h1 {
+        font-size: 50px;
+      }
+    }
+
+    & img {
+      width: 70vh;
+      margin-right: 0vw;
+    }
+  }
+
+  .Projects {
+    & .coluna1-horizontal,
+    .coluna2-horizontal {
+      text-align: center;
+      justify-content: center;
+      width: 100%;
+      padding: 0 120px;
+      margin-left: -20px;
+      margin-top: 10vh;
+    }
+
+    & .imageCentro {
+      width: 60%;
+      height: 214px;
+      margin-top: 20px;
+    }
+
+    & .titleSection {
+      & h1 {
+        font-size: 70px;
+      }
+
+      & h3 {
+        font-size: 30px;
+      }
+    }
+  }
+
+  .Feedbacks {
+    & .clienteTitulo {
+      & h1 {
+        font-size: 50px;
+      }
+    }
+  }
+}
+
+@media (max-width: 607px) {
+  .Home {
+    height: 400px;
+    & .TextHome {
+      font-size: 1.2rem;
+      margin-top: 35vh;
+      & .icones {
+        padding: 0 7vw;
+        & i {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+  .Apresentation .infos h1,
+  .Services .infos h1,
+  .Technologies .infos h1,
+  .Projects .titleSection h1,
+  .Feedbacks .clienteTitulo h1 {
+    font-size: 40px;
+  }
+  .Projects .coluna1-horizontal .img1,
+  .Projects .coluna1-horizontal .img2,
+  .Projects .coluna1-horizontal .img3,
+  .Projects .coluna2-horizontal .img1,
+  .Projects .coluna2-horizontal .img2,
+  .Projects .coluna2-horizontal .img3 {
+    width: 100%;
+    height: 260px;
+    border-radius: 20px;
+  }
+  .Projects .imageCentro {
+    width: 100%;
+    height: 160px;
+    border-radius: 20px;
+  }
+  .Feedbacks .divQuadrados {
+    gap: 20px;
+    padding: 0 5px;
+  }
+  .Feedbacks .divQuadrados .quadrado {
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+  }
+  .Feedbacks .clienteTitulo h1 {
+    font-size: 28px;
+  }
+  .Feedbacks .clienteTitulo p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Apresentation .image img#imagemEu {
+    width: 28em !important;
+    height: auto;
+  }
+  .Home {
+    height: 360px;
+    & .TextHome {
+      font-size: 0.9rem;
+      margin-top: 32vh;
+      & .icones {
+        padding: 0 6vw;
+        & i {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  .Apresentation .infos h1,
+  .Services .infos h1,
+  .Technologies .infos h1,
+  .Projects .titleSection h1,
+  .Feedbacks .clienteTitulo h1 {
+    font-size: 32px;
+  }
+
+  .Apresentation,
+  .Services,
+  .Technologies,
+  .Projects {
+    gap: 30px;
+    padding: 0 10px;
+  }
+
+  & .Services {
+    padding-left: 40px;
+    & .imageSoluctions {
+      width: 35rem;
+      margin-left: 40px;
+    }
+  }
+
+  .Technologies {
+    & img {
+      width: 50vh;
+    }
+  }
+
+  .Projects {
+    & .coluna1-horizontal,
+    .coluna2-horizontal {
+      gap: 16px;
+      padding: 0 10px;
+    }
+
+    & .coluna1-horizontal .img1,
+    .coluna1-horizontal .img2,
+    .coluna1-horizontal .img3,
+    .coluna2-horizontal .img1,
+    .coluna2-horizontal .img2,
+    .coluna2-horizontal .img3 {
+      width: 60%;
+      height: 400px;
+      border-radius: 16px;
+    }
+
+    & .imageCentro {
+      width: 70%;
+      height: 130px;
+      border-radius: 16px;
+      margin-top: 16px;
+    }
+
+    & .titleSection {
+      & h1 {
+        font-size: 55px;
+      }
+
+      & h3 {
+        font-size: 22px;
+      }
+    }
+  }
+
+  .Feedbacks {
+    & .divQuadrados {
+      gap: 16px;
+      padding: 0 8px;
+    }
+    & .divQuadrados .quadrado {
+      width: 90%;
+      height: 360px;
+      border-radius: 16px;
+    }
+    & .clienteTitulo p {
+      font-size: 14px;
+    }
+  }
+
+  footer {
+    & h1 {
+      font-size: 16px;
+      padding-top: 32px;
+    }
+  }
+}
+
+@media (max-width: 430px) {
+  .Home {
+    height: 340px;
+    & .TextHome {
+      font-size: 0.85rem;
+      margin-top: 30vh;
+      & .icones {
+        padding: 0 5vw;
+        & i {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  .Services .infos h1,
+  .Feedbacks .clienteTitulo h1 {
+    font-size: 28px;
+  }
+
+  .Apresentation .infos h1 {
+    font-size: 40px;
+  }
+
+  .Technologies .infos h1 {
+    font-size: 40px;
+  }
+
+  .Projects .titleSection h1 {
+    font-size: 50px;
+  }
+
+  .Apresentation .image #imagemEu {
+    width: 24em !important;
+    height: auto;
+  }
+
+  .Apresentation,
+  .Services,
+  .Technologies,
+  .Projects {
+    gap: 24px;
+    padding: 0 8px;
+  }
+
+  .Technologies {
+    & img {
+      width: 46vh;
+    }
+  }
+
+  .Projects {
+    & .coluna1-horizontal,
+    .coluna2-horizontal {
+      gap: 14px;
+      padding: 0 8px;
+    }
+    & .coluna1-horizontal .img1,
+    .coluna1-horizontal .img2,
+    .coluna1-horizontal .img3,
+    .coluna2-horizontal .img1,
+    .coluna2-horizontal .img2,
+    .coluna2-horizontal .img3 {
+      width: 75%;
+      height: 450px;
+      border-radius: 16px;
+    }
+    & .imageCentro {
+      width: 70%;
+      height: 120px;
+      border-radius: 16px;
+      margin-top: 14px;
+    }
+    & .titleSection {
+      & h3 {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .Feedbacks {
+    & .divQuadrados {
+      padding: 0 6px;
+    }
+    & .divQuadrados .quadrado {
+      width: 80%;
+      height: 350px;
+      border-radius: 16px;
+    }
+    & .clienteTitulo p {
+      font-size: 13px;
+    }
+  }
+
+  footer {
+    & h1 {
+      font-size: 14px;
+      padding-top: 28px;
     }
   }
 }
