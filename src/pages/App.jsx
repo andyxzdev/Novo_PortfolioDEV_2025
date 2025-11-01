@@ -61,12 +61,6 @@ const App = () => {
 
       <section className="Apresentation" id="sobre">
         <div className="infos" data-aos="fade-left">
-          <TagPage
-            Text="Sobre"
-            customStyle={{
-              paddingLeft: "35px",
-            }}
-          />
           <h1>Apresentação</h1>
           <p>
             Olá, me chamo Andy e sou um desenvolvedor mobile & web apaixonado
@@ -96,10 +90,7 @@ const App = () => {
           />
         </div>
         <div className="infos" data-aos="fade-left">
-          <TagPage Text="Serviços" customStyle={{ paddingLeft: "25px" }} />
-          <h1>
-            Soluções que elevam<br></br>seu negócio
-          </h1>
+          <h1>Soluções que elevam seu negócio</h1>
           <p>
             <span>Desenvolvimento Mobile:</span> Aplicativos modernos e
             intuitivos para iOS e Android, garantindo performance e usabilidade.
@@ -117,7 +108,6 @@ const App = () => {
 
       <section className="Technologies" id="tecnologias">
         <div className="infos" data-aos="fade-up">
-          <TagPage Text="Tecnologias" customStyle={{ paddingLeft: "10px" }} />
           <h1>
             Do back-end<br></br>ao front-end
           </h1>
@@ -136,7 +126,6 @@ const App = () => {
 
       <section className="Projects" id="projetos">
         <div className="titleSection" data-aos="fade-left">
-          <TagPage Text="Portfólio" customStyle={{ paddingLeft: "25px" }} />
           <h1>Projetos</h1>
           <h3>Clique no projeto para ver mais!</h3>
         </div>
@@ -173,7 +162,6 @@ const App = () => {
 
       <section className="Feedbacks" id="feedbacks">
         <div className="clienteTitulo" data-aos="fade-up">
-          <TagPage Text="Feedbacks" customStyle={{ paddingLeft: "17px" }} />
           <h1>O que meus clientes dizem</h1>
           <p>Confiança e resultados comprovados</p>
         </div>
