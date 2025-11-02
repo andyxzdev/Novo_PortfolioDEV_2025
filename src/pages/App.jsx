@@ -3,7 +3,6 @@ import "./App.css";
 import "../styles/globalStyles.css";
 import Header from "../components/header/header.jsx";
 import "../components/header/header.css";
-import TagPage from "../components/tagsPage/tagPage.jsx";
 import "../components/tagsPage/tagPage.css";
 import ImagemApresentacao from "../assets/arts/foto2.png";
 import ImagemSoluctions from "../assets/arts/artes22-1080.png";
@@ -142,8 +141,6 @@ const App = () => {
             <button className="img3" data-aos="fade-right"></button>
           </a>
         </div>
-
-        <div className="imageCentro" data-aos="fade-up"></div>
 
         <div className="coluna2-horizontal">
           <a href="https://www.instagram.com/" target="_blank">
