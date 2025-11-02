@@ -1,12 +1,9 @@
 import React, { useState } from "react";
-import axios from "axios"; // axios é usado para fazer requisições HTTP, que nesse caso é pro envio do formulario
+import axios from "axios";
 import "./ContactForm.css";
-import imgForm from "../../assets/arts/art3-1.png";
 
 function ContactForm() {
   const [formData, setFormData] = useState({
-    //form data é o estado que guarda os dados do formulário
-    //e o setFormData é a função que atualiza esse estado
     nome: "",
     tipoProjeto: "",
     whatsapp: "",
@@ -14,8 +11,6 @@ function ContactForm() {
   });
 
   const handleChange = (e) => {
-    //e é o evento que ocorre quando o usuário digita algo no formulário
-    //handleChange é a função que atualiza o estado do formulário
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
@@ -23,13 +18,15 @@ function ContactForm() {
   };
 
   const handleSubmit = async (e) => {
-    //asyn é usado para fazer requisições assíncronas, ou seja, que não bloqueiam a execução do código
-    //handleSubmit é a função que envia os dados do formulário
     e.preventDefault();
 
     try {
-      await axios.post("http://localhost:8080/api/contato", formData); //await é usado para esperar a resposta da requisição antes de continuar a execução do código
-      //axios.post é usado para enviar os dados do formulário para o servidor
+      await axios.post("http://localhost:8000/contato.php", formData, {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+
       alert("Mensagem enviada com sucesso!");
       setFormData({
         nome: "",
@@ -38,8 +35,6 @@ function ContactForm() {
         mensagem: "",
       });
     } catch (error) {
-      //catch é usado para tratar erros que podem ocorrer durante a requisição
-      //se ocorrer um erro, ele será tratado aqui
       console.error("Erro ao enviar o formulário:", error);
       alert("Erro ao enviar. Tente novamente.");
     }
@@ -49,7 +44,9 @@ function ContactForm() {
     <section className="FormsSection" id="formulario">
       <div className="formulario">
         <div className="tituloForms">
-          <h1>Vamos tirar sua ideia do papel?</h1>
+          <h1>
+            Vamos tirar sua ideia<br></br>do papel?
+          </h1>
           <p>
             Preencha o formulário abaixo com seus dados e me conte sobre seu
             projeto. Seja um site, aplicativo ou identidade visual, estou pronto

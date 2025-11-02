@@ -3,23 +3,21 @@ import "./App.css";
 import "../styles/globalStyles.css";
 import Header from "../components/header/header.jsx";
 import "../components/header/header.css";
-import TagPage from "../components/tagsPage/tagPage.jsx";
 import "../components/tagsPage/tagPage.css";
 import ImagemApresentacao from "../assets/arts/foto2.png";
 import ImagemSoluctions from "../assets/arts/artes22-1080.png";
-import Icon1Stats from "../assets/icons/iconteste 1.png";
 import ClienteImg1 from "../assets/clients/imagem1.png";
 import ClienteImg2 from "../assets/clients/imagem2.png";
 import ClienteImg3 from "../assets/clients/imagem3.png";
-import ImageForms from "../assets/arts/art3-1.png";
 import ContactForm from "../components/contactForm/ContactForm.jsx";
 import ContactButton from "../components/contactButton/contactButton.jsx";
 import "../components/contactButton/contactButton.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Footer from "../components/footer/footer.jsx";
 import WhatsAppButton from "../components/whatsappButton/whatsappButton.jsx";
 import ImageTecnologias from "../assets/arts/artes2.png";
+import VideoHomeTopo from "../assets/videoTopo/1029(1).mp4";
+import { TypeAnimation } from "react-type-animation";
 
 const App = () => {
   useEffect(() => {
@@ -32,16 +30,36 @@ const App = () => {
   return (
     <>
       <Header />
-      <section className="Home" id="home"></section>
+      <section className="Home">
+        <video className="videoHome" autoPlay loop muted>
+          <source src={VideoHomeTopo} type="video/mp4" />
+        </video>
+
+        <div className="TextHome">
+          <TypeAnimation
+            sequence={["Bem-vindo(a)", 2000, "ao meu portfólio", 2000]}
+            speed={50}
+            repeat={Infinity}
+          />
+
+          <div className="icones">
+            <a href="https://www.instagram.com/" target="_blank">
+              <i class="bi bi-instagram"></i>
+            </a>
+
+            <a href="https://www.instagram.com/" target="_blank">
+              <i class="bi bi-linkedin"></i>
+            </a>
+
+            <a href="https://www.instagram.com/" target="_blank">
+              <i class="bi bi-github"></i>
+            </a>
+          </div>
+        </div>
+      </section>
 
       <section className="Apresentation" id="sobre">
         <div className="infos" data-aos="fade-left">
-          <TagPage
-            Text="Sobre"
-            customStyle={{
-              paddingLeft: "35px",
-            }}
-          />
           <h1>Apresentação</h1>
           <p>
             Olá, me chamo Andy e sou um desenvolvedor mobile & web apaixonado
@@ -57,6 +75,7 @@ const App = () => {
             src={ImagemApresentacao}
             alt="imagem apresentação"
             style={{ width: "40em", height: "auto" }}
+            id="imagemEu"
           />
         </div>
       </section>
@@ -70,10 +89,7 @@ const App = () => {
           />
         </div>
         <div className="infos" data-aos="fade-left">
-          <TagPage Text="Serviços" customStyle={{ paddingLeft: "25px" }} />
-          <h1>
-            Soluções que elevam<br></br>seu negócio
-          </h1>
+          <h1>Soluções que elevam seu negócio</h1>
           <p>
             <span>Desenvolvimento Mobile:</span> Aplicativos modernos e
             intuitivos para iOS e Android, garantindo performance e usabilidade.
@@ -91,7 +107,6 @@ const App = () => {
 
       <section className="Technologies" id="tecnologias">
         <div className="infos" data-aos="fade-up">
-          <TagPage Text="Tecnologias" customStyle={{ paddingLeft: "10px" }} />
           <h1>
             Do back-end<br></br>ao front-end
           </h1>
@@ -110,7 +125,6 @@ const App = () => {
 
       <section className="Projects" id="projetos">
         <div className="titleSection" data-aos="fade-left">
-          <TagPage Text="Portfólio" customStyle={{ paddingLeft: "25px" }} />
           <h1>Projetos</h1>
           <h3>Clique no projeto para ver mais!</h3>
         </div>
@@ -127,8 +141,6 @@ const App = () => {
             <button className="img3" data-aos="fade-right"></button>
           </a>
         </div>
-
-        <div className="imageCentro" data-aos="fade-up"></div>
 
         <div className="coluna2-horizontal">
           <a href="https://www.instagram.com/" target="_blank">
@@ -147,7 +159,6 @@ const App = () => {
 
       <section className="Feedbacks" id="feedbacks">
         <div className="clienteTitulo" data-aos="fade-up">
-          <TagPage Text="Feedbacks" customStyle={{ paddingLeft: "17px" }} />
           <h1>O que meus clientes dizem</h1>
           <p>Confiança e resultados comprovados</p>
         </div>
@@ -178,9 +189,21 @@ const App = () => {
           </div>
         </div>
       </section>
+      <section className="FormsSection">
+        <img
+          src={ImagemApresentacao}
+          alt="imagem apresentação"
+          style={{ width: "40em", height: "auto" }}
+          data-aos="fade-right"
+        />
+        <div data-aos="fade-left">
+          <ContactForm />
+        </div>
+      </section>
 
-      <ContactForm />
-      <Footer></Footer>
+      <footer>
+        <h1>2025 - Todos os direitos reservados</h1>
+      </footer>
       <WhatsAppButton />
     </>
   );

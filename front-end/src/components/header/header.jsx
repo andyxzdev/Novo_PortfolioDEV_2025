@@ -15,11 +15,11 @@ const Header = ({ customStyle }) => {
         <img src={logo} alt="logo" />
       </div>
 
-      <button className="menu-toggle" onClick={toggleMenu}>
+      <button className="menu-toggle" type="button" aria-label="Abrir menu" onClick={toggleMenu}>
         ☰
       </button>
 
-      <nav className={`nav ${menuOpen ? "open" : ""}`}>
+      <nav className={menuOpen ? "open" : ""}>
         <ul>
           <li>
             <a href="#home" onClick={toggleMenu}>
