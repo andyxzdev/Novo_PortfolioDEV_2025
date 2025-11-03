@@ -43,15 +43,15 @@ const App = () => {
           />
 
           <div className="icones">
-            <a href="https://www.instagram.com/" target="_blank">
+            <a href="https://www.instagram.com/andyxdev_/" target="_blank">
               <i class="bi bi-instagram"></i>
             </a>
 
-            <a href="https://www.instagram.com/" target="_blank">
+            <a href="https://www.linkedin.com/in/andrewsdev/" target="_blank">
               <i class="bi bi-linkedin"></i>
             </a>
 
-            <a href="https://www.instagram.com/" target="_blank">
+            <a href="https://github.com/andyxzdev" target="_blank">
               <i class="bi bi-github"></i>
             </a>
           </div>
@@ -129,29 +129,32 @@ const App = () => {
           <h3>Clique no projeto para ver mais!</h3>
         </div>
         <div className="coluna1-horizontal">
-          <a href="https://www.instagram.com/" target="_blank">
+          <a href="https://cogupets.com.br/fungicultura/" target="_blank">
             <button className="img1" data-aos="fade-left"></button>
           </a>
 
-          <a href="https://www.instagram.com/" target="_blank">
+          <a href="https://cogupets.com.br/" target="_blank">
             <button className="img2" data-aos="fade-up"></button>
           </a>
 
-          <a href="https://www.instagram.com/" target="_blank">
+          <a href="https://amaitajai.org.br/servicos/" target="_blank">
             <button className="img3" data-aos="fade-right"></button>
           </a>
         </div>
 
         <div className="coluna2-horizontal">
-          <a href="https://www.instagram.com/" target="_blank">
+          <a href="http://www.comais.com.br/" target="_blank">
             <button className="img1" data-aos="fade-left"></button>
           </a>
 
-          <a href="https://www.instagram.com/" target="_blank">
+          <a href="https://github.com/andyxzdev" target="_blank">
             <button className="img2" data-aos="fade-up"></button>
           </a>
 
-          <a href="https://www.instagram.com/" target="_blank">
+          <a
+            href="https://github.com/andyxzdev/NOVO_LandingPage_UnityCompany_React-TypeSript.git"
+            target="_blank"
+          >
             <button className="img3" data-aos="fade-right"></button>
           </a>
         </div>
@@ -168,24 +171,36 @@ const App = () => {
             <div className="fotoCliente">
               <img src={ClienteImg1} alt="imagem cliente" />
             </div>
-            <h1 className="nomeCliente">Ana</h1>
-            <p>“A Unity revolucionou nossa presença online. Recomendo”</p>
+            <h1 className="nomeCliente">Lucas</h1>
+            <p>
+              “Serviço de primeira! O site ficou profissional, rápido e
+              exatamente como eu queria. A identidade visual deu outra cara pro
+              meu negócio. Recomendo demais!”
+            </p>
           </div>
 
           <div className="quadrado" data-aos="fade-down">
             <div className="fotoCliente">
               <img src={ClienteImg2} alt="imagem cliente" />
             </div>
-            <h1 className="nomeCliente">Carlos</h1>
-            <p>“O app que desenvolveram superou nossas expectativas”</p>
+            <h1 className="nomeCliente">Flaviano</h1>
+            <p>
+              “Ficou top demais e a comunicação foi fácil, o resultado ficou
+              lindo e o site já tá gerando retorno. Valeu pelo capricho em cada
+              detalhe!”
+            </p>
           </div>
 
           <div className="quadrado" data-aos="fade-right">
             <div className="fotoCliente">
               <img src={ClienteImg3} alt="imagem cliente" />
             </div>
-            <h1 className="nomeCliente">Ricardo</h1>
-            <p>“Melhor investimento que fizemos em marketing digital”</p>
+            <h1 className="nomeCliente">Wesley</h1>
+            <p>
+              “Gostei muito do processo todo, desde o design da marca até o
+              desenvolvimento do site. Tudo muito bem pensado, moderno e
+              funcional. Resultado acima das expectativas!”
+            </p>
           </div>
         </div>
       </section>

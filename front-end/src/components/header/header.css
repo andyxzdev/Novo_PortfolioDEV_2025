@@ -206,6 +206,7 @@ a:hover {
     font-size: 16px;
     margin-top: 18px;
     border-radius: 30px;
+    margin-right: 6vw;
   }
 
   .menu-toggle {
@@ -219,5 +220,25 @@ a:hover {
     right: 18px;
     z-index: 15;
     cursor: pointer;
+  }
+}
+
+@media (max-width: 480px) {
+  ul {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px !important;
+  }
+
+  li {
+    margin-right: 10vw;
+  }
+
+  .ButtHeader {
+    margin-right: 21vw;
+  }
+
+  .menu-toggle {
+    top: 54px;
   }
 }
