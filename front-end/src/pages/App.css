@@ -387,7 +387,11 @@ footer {
     }
 
     & .TextHome {
-      margin-top: 40vh;
+      margin-top: 50vh;
+
+      & .icones {
+        margin-top: 50px;
+      }
     }
   }
 
@@ -629,6 +633,10 @@ footer {
         height: 500px;
       }
     }
+  }
+
+  footer {
+    padding-top: 20px;
   }
 }
 
