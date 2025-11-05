@@ -4,7 +4,7 @@
 #btn-contato :before,
 #btn-contato:after,
 #btn-contato:before {
-  border: 0 solid;
+  border: none;
   box-sizing: border-box;
 }
 #btn-contato {

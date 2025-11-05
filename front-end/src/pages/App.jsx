@@ -18,6 +18,9 @@ import WhatsAppButton from "../components/whatsappButton/whatsappButton.jsx";
 import ImageTecnologias from "../assets/arts/artes2.png";
 import VideoHomeTopo from "../assets/videoTopo/1029(1).mp4";
 import { TypeAnimation } from "react-type-animation";
+import InfiniteCarousel from "../components/carrosselLogos/carrosselLogos.jsx";
+import Orb from "../components/orb/Orb.jsx";
+import OrbImage from "../assets/arts/orbImage.jpg";
 
 const App = () => {
   useEffect(() => {
@@ -105,6 +108,8 @@ const App = () => {
         </div>
       </section>
 
+      <InfiniteCarousel />
+
       <section className="Technologies" id="tecnologias">
         <div className="infos" data-aos="fade-up">
           <h1>
@@ -122,6 +127,8 @@ const App = () => {
 
         <img src={ImageTecnologias} alt="" data-aos="fade-down" />
       </section>
+
+      <InfiniteCarousel />
 
       <section className="Projects" id="projetos">
         <div className="titleSection" data-aos="fade-left">
@@ -204,7 +211,7 @@ const App = () => {
           </div>
         </div>
       </section>
-      <section className="FormsSection">
+      {/* <section className="FormsSection">
         <img
           src={ImagemApresentacao}
           alt="imagem apresentação"
@@ -214,10 +221,43 @@ const App = () => {
         <div data-aos="fade-left">
           <ContactForm />
         </div>
+      </section>*/}
+
+      <section
+        style={{
+          width: "100%",
+          height: "600px",
+          position: "relative",
+          marginTop: "5vw",
+          marginBottom: "5vw",
+        }}
+        id="orcamento"
+      >
+        <div className="textOrb">
+          <img
+            src={OrbImage}
+            alt="Orb"
+            style={{
+              width: "210px",
+              height: "auto",
+              marginLeft: "-2vw",
+              marginBottom: "2vw",
+            }}
+          />
+          <h1>Envie seu projeto</h1>
+          <h3>e vamos trabalhar juntos</h3>
+          <ContactButton Text="Fale comigo" />
+        </div>
+        <Orb
+          hoverIntensity={0.5}
+          rotateOnHover={true}
+          hue={0}
+          forceHoverState={false}
+        />
       </section>
 
       <footer>
-        <h1>2025 - Todos os direitos reservados</h1>
+        <h1>© 2025 Andy Dev | Desenvolvedor Web & Designer.</h1>
       </footer>
       <WhatsAppButton />
     </>

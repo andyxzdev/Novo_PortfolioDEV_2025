@@ -15,7 +15,12 @@ const Header = ({ customStyle }) => {
         <img src={logo} alt="logo" />
       </div>
 
-      <button className="menu-toggle" type="button" aria-label="Abrir menu" onClick={toggleMenu}>
+      <button
+        className="menu-toggle"
+        type="button"
+        aria-label="Abrir menu"
+        onClick={toggleMenu}
+      >
         ☰
       </button>
 
@@ -47,7 +52,7 @@ const Header = ({ customStyle }) => {
             </a>
           </li>
           <li>
-            <a href="#formulario" onClick={toggleMenu}>
+            <a href="#orcamento" onClick={toggleMenu}>
               Fazer orçamento
             </a>
           </li>

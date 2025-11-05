@@ -76,7 +76,6 @@
     }
   }
 }
-
 .Services {
   width: 100%;
   height: auto;
@@ -340,6 +339,26 @@
         width: 80%;
       }
     }
+  }
+}
+
+.textOrb {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  text-align: center;
+
+  & h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+
+  & h3 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
   }
 }
 
@@ -774,7 +793,7 @@ footer {
     width: 100%;
     padding: 0 120px;
     margin-left: -20px;
-    margin-top: 20vh;
+    margin-top: 7vh;
 
     & .infos {
       & h1 {
@@ -1096,6 +1115,7 @@ footer {
   }
 
   .Technologies {
+    margin-top: 7vh;
     & img {
       width: 50vh;
     }
@@ -1145,10 +1165,11 @@ footer {
     }
   }
 
-  footer {
+  .textOrb {
+    width: 90%;
+
     & h1 {
-      font-size: 16px;
-      padding-top: 32px;
+      font-size: 2rem;
     }
   }
 
@@ -1311,6 +1332,14 @@ footer {
       & h3 {
         font-size: 20px;
       }
+    }
+  }
+
+  footer {
+    height: 33vh;
+    & h1 {
+      padding: 120px 10px;
+      font-size: 18.5px;
     }
   }
 }
