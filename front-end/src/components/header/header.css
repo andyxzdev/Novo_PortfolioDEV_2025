@@ -1,6 +1,6 @@
 .header {
   background-color: #111111;
-  color: #fff;
+  color: #ffffff;
   text-align: center;
   font-size: 24px;
   width: 100%;
@@ -29,25 +29,19 @@ ul {
   justify-content: space-between;
   margin-right: 40px;
   color: #fff;
-  text-decoration: none;
   margin-top: 30px;
 }
 
-li {
-  color: #fff;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-a {
-  color: #fff;
+li a {
   text-decoration: none;
+  color: #ffffff;
   transition: all 0.3s ease-in-out;
   font-weight: bold;
 }
 
-a:hover {
-  color: #000000;
+li a:hover {
+  color: #c0c0c0;
+  transform: scale(1.1);
 }
 
 .ButtHeader {
