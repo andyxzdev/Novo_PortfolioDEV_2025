@@ -394,14 +394,27 @@ footer {
   .Apresentation {
     margin-top: -150px;
   }
-}
 
-.Projects .coluna1-horizontal,
-.coluna2-horizontal {
-  & .img1,
-  .img2,
-  .img3 {
-    width: 450px;
+  .Projects .coluna1-horizontal,
+  .coluna2-horizontal {
+    & .img1,
+    .img2,
+    .img3 {
+      width: 450px;
+    }
+  }
+
+  .Projects .coluna1-horizontal,
+  .coluna2-horizontal {
+    margin-left: 60px;
+  }
+
+  .Feedbacks {
+    padding: 0 200px;
+  }
+
+  footer h1 {
+    padding-top: 100px;
   }
 }
 
