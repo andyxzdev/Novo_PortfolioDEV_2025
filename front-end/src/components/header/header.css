@@ -98,8 +98,9 @@ li a:hover {
 }
 
 @media (max-width: 1367px) {
-  li a {
+  li {
     font-size: 15px;
+    padding-bottom: 10px;
   }
 
   .header button {
