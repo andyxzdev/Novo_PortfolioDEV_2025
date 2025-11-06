@@ -439,6 +439,10 @@ footer {
         }
       }
     }
+
+    & .videoHome {
+      margin-top: -18px;
+    }
   }
 
   .Apresentation {
@@ -516,6 +520,11 @@ footer {
 }
 
 @media (min-width: 1368px) and (max-width: 1559px) {
+  .Home {
+    & .videoHome {
+      margin-top: -18px;
+    }
+  }
   .Technologies {
     & .infos {
       width: 100%;
@@ -559,6 +568,10 @@ footer {
           font-size: 20px;
         }
       }
+    }
+
+    & .videoHome {
+      margin-top: -18px;
     }
   }
 
@@ -654,6 +667,10 @@ footer {
           font-size: 28px;
         }
       }
+    }
+
+    & .videoHome {
+      margin-top: -18px;
     }
   }
 
