@@ -25,7 +25,7 @@ import OrbImage from "../assets/arts/orbImage.jpg";
 const App = () => {
   useEffect(() => {
     AOS.init({
-      duration: 2000,
+      duration: 3000,
       once: true,
       offset: 120, // evita ativar animações fora da viewport
     });
