@@ -16,7 +16,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import WhatsAppButton from "../components/whatsappButton/whatsappButton.jsx";
 import ImageTecnologias from "../assets/arts/artes2.png";
-import VideoHomeTopo from "../assets/videoTopo/1029.mp4";
+import VideoHomeTopo from "../assets/videoTopo/1029(2).webm";
 import { TypeAnimation } from "react-type-animation";
 import InfiniteCarousel from "../components/carrosselLogos/carrosselLogos.jsx";
 import Orb from "../components/orb/Orb.jsx";
@@ -27,7 +27,7 @@ const App = () => {
     AOS.init({
       duration: 2000,
       once: true,
-      offset: 120,
+      offset: 120, // evita ativar animações fora da viewport
     });
   }, []);
 
