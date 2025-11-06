@@ -16,7 +16,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import WhatsAppButton from "../components/whatsappButton/whatsappButton.jsx";
 import ImageTecnologias from "../assets/arts/artes2.png";
-import VideoHomeTopo from "../assets/videoTopo/1029(1).mp4";
+import VideoHomeTopo from "../assets/videoTopo/1029.mp4";
 import { TypeAnimation } from "react-type-animation";
 import InfiniteCarousel from "../components/carrosselLogos/carrosselLogos.jsx";
 import Orb from "../components/orb/Orb.jsx";
@@ -27,6 +27,7 @@ const App = () => {
     AOS.init({
       duration: 2000,
       once: true,
+      offset: 120,
     });
   }, []);
 
@@ -79,6 +80,7 @@ const App = () => {
             alt="imagem apresentação"
             style={{ width: "40em", height: "auto" }}
             id="imagemEu"
+            loading="lazy"
           />
         </div>
       </section>
@@ -89,6 +91,7 @@ const App = () => {
             src={ImagemSoluctions}
             alt="imagem soluçôes"
             data-aos="fade-right"
+            loading="lazy"
           />
         </div>
         <div className="infos" data-aos="fade-left">
@@ -125,7 +128,12 @@ const App = () => {
           <ContactButton Text="Saiba mais" />
         </div>
 
-        <img src={ImageTecnologias} alt="" data-aos="fade-down" />
+        <img
+          src={ImageTecnologias}
+          alt=""
+          data-aos="fade-down"
+          loading="lazy"
+        />
       </section>
 
       <InfiniteCarousel />
@@ -176,7 +184,7 @@ const App = () => {
         <div className="divQuadrados">
           <div className="quadrado" data-aos="fade-left">
             <div className="fotoCliente">
-              <img src={ClienteImg1} alt="imagem cliente" />
+              <img src={ClienteImg1} alt="imagem cliente" loading="lazy" />
             </div>
             <h1 className="nomeCliente">Lucas</h1>
             <p>
@@ -188,7 +196,7 @@ const App = () => {
 
           <div className="quadrado" data-aos="fade-down">
             <div className="fotoCliente">
-              <img src={ClienteImg2} alt="imagem cliente" />
+              <img src={ClienteImg2} alt="imagem cliente" loading="lazy" />
             </div>
             <h1 className="nomeCliente">Flaviano</h1>
             <p>
@@ -200,7 +208,7 @@ const App = () => {
 
           <div className="quadrado" data-aos="fade-right">
             <div className="fotoCliente">
-              <img src={ClienteImg3} alt="imagem cliente" />
+              <img src={ClienteImg3} alt="imagem cliente" loading="lazy" />
             </div>
             <h1 className="nomeCliente">Wesley</h1>
             <p>
@@ -243,6 +251,7 @@ const App = () => {
               marginLeft: "-2vw",
               marginBottom: "2vw",
             }}
+            loading="lazy"
           />
           <h1>Envie seu projeto</h1>
           <h3>e vamos trabalhar juntos</h3>
