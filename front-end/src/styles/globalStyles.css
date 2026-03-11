@@ -19,3 +19,7 @@ body {
   flex-direction: column;
   scroll-behavior: smooth;
 }
+
+html {
+  overflow-x: hidden;
+}
